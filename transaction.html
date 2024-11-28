@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction Page</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Make a Transaction</h1>
+    <form id="transaction-form">
+      <div class="form-group">
+        <label for="sender">Sender:</label>
+        <input type="text" id="sender" name="sender" required />
+      </div>
+
+      <div class="form-group">
+        <label for="receiver">Receiver:</label>
+        <input type="text" id="receiver" name="receiver" required />
+      </div>
+
+      <div class="form-group">
+        <label for="amount">Amount ($):</label>
+        <input type="number" id="amount" name="amount" min="1" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Add a note..." rows="4"></textarea>
+      </div>
+
+      <button type="submit">Submit Transaction</button>
+    </form>
+
+    <div id="response-message" class="response-message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
